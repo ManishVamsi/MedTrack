@@ -14,7 +14,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # AWS Region (best practice: use environment variables or IAM roles on EC2)
-AWS_REGION = os.environ.get('AWS_REGION', 'ap-south-1') # e.g., 'us-east-1', 'ap-south-1'
+AWS_REGION = os.environ.get('AWS_REGION', 'us-east-1') # e.g., 'us-east-1', 'ap-south-1'
 
 # Initialize Boto3 clients and resources for DynamoDB and SNS.
 # When running on an EC2 instance with an associated IAM Role, boto3 will automatically pick up credentials from the instance metadata.
